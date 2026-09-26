@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Shopping Cart | Bean Boutique</title>
+    <link href="style.css" rel="stylesheet" />
+    <meta
+      content="Shopping Cart at Bean Boutique: discover coffees, brewing tools and workshops in our interactive shop prototype."
+      name="description"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="page-shoppingcart">
+    <a class="skip-link" href="#main-content"> Skip to main content </a>
+    <header class="site-header">
+      <div class="logo-container">
+        <a href="home.html">
+          <img
+            alt="Bean Boutique home"
+            src="image/a3933b448409cd6f92fd5e239f0c9370.jpg"
+          />
+        </a>
+      </div>
+      <div class="logo">
+        <a href="home.html"> Bean Boutique </a>
+      </div>
+      <nav aria-label="Main navigation" class="hamburger-nav">
+        <button
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          class="hamburger"
+          type="button"
+        >
+          <span class="bar"> </span>
+          <span class="bar"> </span>
+          <span class="bar"> </span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <a href="home.html"> Home </a>
+          </li>
+          <li>
+            <a href="coffee_selection.html"> Coffee Selection </a>
+          </li>
+          <li>
+            <a href="BrewingEquipment.html"> Brewing Equipment </a>
+          </li>
+          <li>
+            <a href="event.html"> Events </a>
+          </li>
+          <li>
+            <a href="specialoffer.html"> Special Offers </a>
+          </li>
+          <li>
+            <a aria-current="page" aria-label="Shopping Cart" class="cart-link" href="shoppingcart.html">
+              <svg
+                aria-hidden="true"
+                class="cart-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H7"></path>
+                <circle cx="10" cy="20" r="1.3"></circle>
+                <circle cx="18" cy="20" r="1.3"></circle>
+              </svg>
+              <span class="cart-label">Shopping Cart</span>
+              <span
+                aria-live="polite"
+                class="cart-counter hidden"
+                role="status"
+              >
+                0
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <section aria-label="Your shopping cart" class="page-header">
+        <h1>Your Coffee Collection</h1>
+        <p>
+          Review your saved coffees and equipment. Prices are in USD. Checkout
+          is a demonstration with no payment or order.
+        </p>
+      </section>
+      <div class="shopping-cart" id="shopping-cart">
+        <div class="cart-empty" id="cart-empty">
+          Your cart is empty. Start shopping now.
+          <div class="empty-cta">
+            <a href="coffee_selection.html"> Browse coffees </a>
+          </div>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-summary hidden" id="cart-summary"></div>
+      </div>
+    </main>
+    <div
+      aria-labelledby="receiptModalTitle"
+      aria-modal="true"
+      class="modal"
+      hidden
+      id="receiptModal"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog receipt-modal">
+        <button
+          aria-label="Close dialog"
+          class="modal-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+        <div class="receipt-header">
+          <h2 class="receipt-title" id="receiptModalTitle">Demo Checkout</h2>
+        </div>
+        <div class="modal-body">
+          <div id="receiptContent">
+            <div class="receipt-items" id="receiptItems"></div>
+            <div class="receipt-payment">
+              <h3>Preferred payment method (demo)</h3>
+              <div class="payment-options">
+                <button
+                  aria-pressed="false"
+                  class="payment-option"
+                  data-method="cash"
+                  type="button"
+                >
+                  Cash
+                </button>
+                <button
+                  aria-pressed="false"
+                  class="payment-option"
+                  data-method="online"
+                  type="button"
+                >
+                  Online Payment
+                </button>
+              </div>
+              <div
+                class="payment-alert-card"
+                hidden
+                id="paymentAlertCard"
+                role="alert"
+              >
+                Please select a payment method before confirming.
+              </div>
+            </div>
+          </div>
+          <div class="success-message" hidden id="successMessage">
+            <div class="success-icon">&checkmark;</div>
+            <h3>Demo completed</h3>
+            <p>
+              No payment was taken and no order was placed. Your cart stays
+              saved for a future purchase.
+            </p>
+            <p class="payment-method">
+              Payment Method:
+              <span id="selectedMethod"> </span>
+            </p>
+          </div>
+        </div>
+        <div class="receipt-confirm">
+          <button
+            class="btn-confirm"
+            data-action="checkout-confirm"
+            type="button"
+          >
+            Complete Demo Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer aria-label="Luxury concierge footer" class="luxury-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Bean Boutique Concierge</h2>
+          <p>
+            For curated sourcing, private tastings, and bespoke blends, our
+            concierge team is at your service.
+          </p>
+          <div class="footer-video">
+            <h3>Coffee Moments</h3>
+            <iframe
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+              loading="lazy"
+              src="https://www.youtube.com/embed/wFut2zYOT7k?si=kW81jgtr7HmxKUh"
+              title="Coffee video supplied with the original project"
+            >
+            </iframe>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h3>Experience</h3>
+            <ul>
+              <li>
+                <a href="coffee_selection.html"> Coffee Selection </a>
+              </li>
+              <li>
+                <a href="BrewingEquipment.html"> Brewing Equipment </a>
+              </li>
+              <li>
+                <a href="event.html"> Events </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <ul>
+              <li>
+                <a data-open="contactPanel" href="#contactPanel">
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a data-open="locationPanel" href="#locationPanel">
+                  Location
+                </a>
+              </li>
+              <li>
+                <a data-open="policyPanel" href="#policyPanel"> Policy </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h3>Stay In Touch</h3>
+          <p>Prepare an email to ask about new coffees and club updates.</p>
+          <form
+            action="mailto:pyae.2255phk@gmail.com"
+            class="footer-form"
+            enctype="text/plain"
+            id="footerContactForm"
+            method="post"
+          >
+            <label class="visually-hidden" for="footerContactForm-email">
+              Email address
+            </label>
+            <input
+              autocomplete="email"
+              id="footerContactForm-email"
+              maxlength="254"
+              name="email"
+              placeholder="Email address"
+              required
+              type="email"
+            />
+            <button class="btn footer-btn" type="submit">
+              Email Concierge
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique &middot; Student website prototype</p>
+      </div>
+    </footer>
+    <div class="panel-backdrop" hidden id="panelBackdrop"></div>
+    <div
+      aria-labelledby="contactPanelTitle"
+      aria-modal="true"
+      class="slide-panel"
+      hidden
+      id="contactPanel"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="slide-panel-header">
+        <h2 class="slide-panel-title" id="contactPanelTitle">Contact Us</h2>
+        <button
+          aria-label="Close contact panel"
+          class="slide-panel-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="slide-panel-content">
+        <h3>Get in Touch</h3>
+        <p>
+          Email:
+          <a href="mailto:pyae.2255phk@gmail.com"> pyae.2255phk@gmail.com </a>
+        </p>
+        <p>Send us a question about coffee, brewing equipment or an event.</p>
+        <h3>Our selected venue</h3>
+        <p>
+          Strategy First College &ndash; Yangon Teaching Centre 1
+          <br />
+          Myaynigone, Yangon, Myanmar
+        </p>
+        <button class="btn-secondary" data-open="locationPanel" type="button">
+          View location
+        </button>
+      </div>
+    </div>
+    <div
+      aria-labelledby="locationPanelTitle"
+      aria-modal="true"
+      class="slide-panel"
+      hidden
+      id="locationPanel"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="slide-panel-header">
+        <h2 class="slide-panel-title" id="locationPanelTitle">Our Location</h2>
+        <button
+          aria-label="Close location panel"
+          class="slide-panel-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="slide-panel-content">
+        <h3>Strategy First Myaynigone</h3>
+        <p>
+          Strategy First College &ndash; Yangon Teaching Centre 1
+          <br />
+          Myaynigone, Yangon, Myanmar
+        </p>
+        <p>
+          The venue selected for this student prototype. Please confirm
+          attendance and venue availability by email before travelling.
+        </p>
+        <div class="footer-locations">
+          <iframe
+            allowfullscreen
+            class="map-iframe"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5611.467732973025!2d96.13290718615393!3d16.802293475314606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb43fa921d1f%3A0xcd0eb4c146c271bd!2sStrategy%20First%20College%20-%20Yangon%20Teaching%20Centre%201!5e0!3m2!1sen!2smm!4v1789392054840!5m2!1sen!2smm"
+            title="Map of Strategy First College, Myaynigone, Yangon"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby="policyPanelTitle"
+      aria-modal="true"
+      class="slide-panel"
+      hidden
+      id="policyPanel"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="slide-panel-header">
+        <h2 class="slide-panel-title" id="policyPanelTitle">Policies</h2>
+        <button
+          aria-label="Close policy panel"
+          class="slide-panel-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="slide-panel-content">
+        <h3>Your information</h3>
+        <p>
+          Registration and concierge forms prepare an email to
+          pyae.2255phk@gmail.com. Review it and press Send in your email app. A
+          draft is not a confirmed booking.
+        </p>
+        <p>
+          Cart items, favourites and demo offer choices are saved in this
+          browser. Registration details are not saved in browser storage. Google
+          Maps and YouTube are third-party embeds and may receive connection
+          information when loaded.
+        </p>
+        <h3>Orders and subscriptions</h3>
+        <p>
+          Prices, promotions, delivery plans and event dates are illustrative.
+          Checkout is a demonstration: no payment is collected, no order is
+          placed and no subscription is started.
+        </p>
+        <h3>Discounts</h3>
+        <p>
+          The welcome offer takes up to $10 off merchandise. The member offer
+          takes 5% off merchandise. Choose one offer per cart; discounts never
+          exceed the subtotal. Eligibility is simulated on this device.
+        </p>
+      </div>
+    </div>
+    <div
+      aria-labelledby="emailTitle"
+      aria-modal="true"
+      class="modal"
+      hidden
+      id="emailModal"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <button
+          aria-label="Close email draft"
+          class="modal-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+        <h2 class="modal-title" id="emailTitle">Your email draft</h2>
+        <p class="modal-subtitle">
+          To:
+          <a href="mailto:pyae.2255phk@gmail.com"> pyae.2255phk@gmail.com </a>
+        </p>
+        <p class="modal-note">
+          Open your email app, review the draft and press Send. Your request is
+          confirmed only when the organiser replies.
+        </p>
+        <label class="draft-label" for="emailDraft"> Draft message </label>
+        <textarea
+          class="email-draft"
+          id="emailDraft"
+          readonly
+          rows="9"
+        ></textarea>
+        <div class="draft-actions">
+          <a
+            class="btn-primary"
+            href="mailto:pyae.2255phk@gmail.com"
+            id="openEmail"
+          >
+            Open email app
+          </a>
+          <button class="btn-secondary" id="copyEmail" type="button">
+            Copy draft
+          </button>
+        </div>
+        <p class="status" id="emailStatus" role="status"></p>
+      </div>
+    </div>
+    <p
+      aria-atomic="true"
+      aria-live="polite"
+      class="toast"
+      id="siteStatus"
+      role="status"
+    ></p>
+    <p class="storage-notice" hidden id="storageNotice" role="status"></p>
+    <noscript>
+      <p class="noscript-note">
+        Enable JavaScript to use cart, search and registration forms. You can
+        also contact
+        <a href="mailto:pyae.2255phk@gmail.com"> pyae.2255phk@gmail.com </a>
+        .
+      </p>
+    </noscript>
+  </body>
+</html>

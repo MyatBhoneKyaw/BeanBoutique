@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Home | Bean Boutique</title>
+    <link href="style.css" rel="stylesheet" />
+    <meta
+      content="Home at Bean Boutique: discover coffees, brewing tools and workshops in our interactive shop prototype."
+      name="description"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="page-home">
+    <a class="skip-link" href="#main-content"> Skip to main content </a>
+    <header class="site-header">
+      <div class="logo-container">
+        <a href="home.html">
+          <img
+            alt="Bean Boutique home"
+            src="image/a3933b448409cd6f92fd5e239f0c9370.jpg"
+          />
+        </a>
+      </div>
+      <div class="logo">
+        <a href="home.html"> Bean Boutique </a>
+      </div>
+      <nav aria-label="Main navigation" class="hamburger-nav">
+        <button
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          class="hamburger"
+          type="button"
+        >
+          <span class="bar"> </span>
+          <span class="bar"> </span>
+          <span class="bar"> </span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <a aria-current="page" href="home.html"> Home </a>
+          </li>
+          <li>
+            <a href="coffee_selection.html"> Coffee Selection </a>
+          </li>
+          <li>
+            <a href="BrewingEquipment.html"> Brewing Equipment </a>
+          </li>
+          <li>
+            <a href="event.html"> Events </a>
+          </li>
+          <li>
+            <a href="specialoffer.html"> Special Offers </a>
+          </li>
+          <li>
+            <a aria-label="Shopping Cart" class="cart-link" href="shoppingcart.html">
+              <svg
+                aria-hidden="true"
+                class="cart-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H7"></path>
+                <circle cx="10" cy="20" r="1.3"></circle>
+                <circle cx="18" cy="20" r="1.3"></circle>
+              </svg>
+              <span class="cart-label">Shopping Cart</span>
+              <span
+                aria-live="polite"
+                class="cart-counter hidden"
+                role="status"
+              >
+                0
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <div class="container">
+        <div class="cup">
+          <div class="text">
+            <h1 class="title">Savor the Perfect Brew!</h1>
+            <p>
+              Thoughtfully chosen beans. Beautiful brewing tools. A little
+              coffee discovery, every day.
+            </p>
+            <a class="button-buy" href="coffee_selection.html">
+              <span> Buy Now </span>
+              <span class="inner"> </span>
+            </a>
+          </div>
+          <div aria-hidden="true" class="hero-art">
+            <div class="cup-part-top">
+              <img alt="coffee" src="image/Coffeecupillustrat.png" />
+            </div>
+            <div class="cup__part cup__part--bottom">
+              <div class="cup-part-bottom-img">
+                <img alt="wooden platform" src="image/Woodenplatformtran.png" />
+              </div>
+            </div>
+            <div class="coffee-bean img">
+              <img alt="coffee beans" src="image/Coffeebeanstranspa.png" />
+            </div>
+            <div class="choco img">
+              <img alt src="image/ChocolateCwithcof.png" />
+            </div>
+            <div class="coffee-sack img">
+              <img alt="coffee beans sack" src="image/Coffeebeanssack.png" />
+            </div>
+            <div class="shadow">
+              <img alt src="image/Shadowwithtranspar.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div aria-hidden="true" class="luxury-divider"></div>
+      <section
+        aria-label="Featured coffees, equipment and events"
+        aria-roledescription="carousel"
+        class="hero-slider-wrapper"
+      >
+        <div class="hero-slider-container">
+          <div
+            aria-hidden="false"
+            aria-label="Slide 1 of 3"
+            class="hero-slide active"
+            data-slide="0"
+            role="group"
+          >
+            <div class="hero-slide-left">
+              <div class="slide-brand-narrative">
+                <h2 class="slide-title">Coffee Menu</h2>
+                <p class="slide-subtitle">
+                  Find a familiar favourite or try a new origin. Explore our
+                  house blend, single-origin beans and freshly prepared coffees.
+                </p>
+              </div>
+              <a class="hero-cta-button" href="coffee_selection.html">
+                <span class="cta-text"> Explore Collection </span>
+                <svg
+                  aria-hidden="true"
+                  class="cta-arrow"
+                  fill="none"
+                  focusable="false"
+                  viewbox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 10H16M12 6L16 10L12 14"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hero-slide-right">
+              <div class="hero-image-card">
+                <img
+                  alt="Coffee Selection"
+                  class="hero-image"
+                  src="image/human_and_coffee.jpg"
+                />
+                <div class="image-card-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            aria-label="Slide 2 of 3"
+            class="hero-slide"
+            data-slide="1"
+            inert
+            role="group"
+          >
+            <div class="hero-slide-left">
+              <div class="slide-brand-narrative">
+                <h2 class="slide-title">Brewing Equipment</h2>
+                <p class="slide-subtitle">
+                  Bring the caf&eacute; experience home. Explore espresso
+                  machines, French presses and everyday tools, with practical
+                  tips for your next brew.
+                </p>
+              </div>
+              <a class="hero-cta-button" href="BrewingEquipment.html">
+                <span class="cta-text"> View Equipment </span>
+                <svg
+                  aria-hidden="true"
+                  class="cta-arrow"
+                  fill="none"
+                  focusable="false"
+                  viewbox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 10H16M12 6L16 10L12 14"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hero-slide-right">
+              <div class="hero-image-card">
+                <img
+                  alt="Brewing Equipment"
+                  class="hero-image"
+                  src="image/photo_2026-03-23_23-09-27.jpg"
+                />
+                <div class="image-card-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            aria-label="Slide 3 of 3"
+            class="hero-slide"
+            data-slide="2"
+            inert
+            role="group"
+          >
+            <div class="hero-slide-left">
+              <div class="slide-brand-narrative">
+                <h2 class="slide-title">Events of Bean Boutique</h2>
+                <p class="slide-subtitle">
+                  Share a table and discover something new. Join coffee
+                  tastings, hands-on brewing sessions and conversations with a
+                  roaster.
+                </p>
+              </div>
+              <a class="hero-cta-button" href="event.html">
+                <span class="cta-text"> Discover Events </span>
+                <svg
+                  aria-hidden="true"
+                  class="cta-arrow"
+                  fill="none"
+                  focusable="false"
+                  viewbox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 10H16M12 6L16 10L12 14"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hero-slide-right">
+              <div class="hero-image-card">
+                <img
+                  alt="Global Events"
+                  class="hero-image"
+                  src="image/event_human.jpg"
+                />
+                <div class="image-card-overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slider-controls"
+          role="group"
+          aria-label="Slideshow controls"
+        >
+          <button
+            aria-label="Previous slide"
+            class="hero-nav-arrow hero-nav-prev"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="nav-arrow"
+              fill="none"
+              focusable="false"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+              ></path>
+            </svg>
+          </button>
+          <button
+            aria-label="Next slide"
+            class="hero-nav-arrow hero-nav-next"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="nav-arrow"
+              fill="none"
+              focusable="false"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+              ></path>
+            </svg>
+          </button>
+          <div class="hero-indicators">
+            <button
+              aria-current="true"
+              aria-label="Go to slide 1"
+              class="hero-indicator active"
+              data-index="0"
+              type="button"
+            ></button>
+            <button
+              aria-current="false"
+              aria-label="Go to slide 2"
+              class="hero-indicator"
+              data-index="1"
+              type="button"
+            ></button>
+            <button
+              aria-current="false"
+              aria-label="Go to slide 3"
+              class="hero-indicator"
+              data-index="2"
+              type="button"
+            ></button>
+          </div>
+        </div>
+      </section>
+      <div aria-hidden="true" class="luxury-divider"></div>
+      <section aria-label="Heritage &amp; Craftsmanship" class="heritage">
+        <div class="heritage-grid">
+          <div class="heritage-image" data-parallax>
+            <img
+              alt="Historical illustration of an English coffeehouse"
+              src="image/English-coffeehouse-during-The-Restoration-1668.webp"
+            />
+          </div>
+          <div class="heritage-copy">
+            <h2>History of Bean Boutique</h2>
+            <p>
+              Our story begins with a small espresso machine, a few wooden
+              tables and a love of good coffee. Inspired by the welcoming
+              tradition of the coffeehouse, Bean Boutique brings carefully
+              chosen beans and curious people together. Discover your next
+              favourite cup with us.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section aria-label="Member club invitation" class="members" id="members">
+        <div class="members-content">
+          <div class="members-copy">
+            <h2>Invitation to the Private Club</h2>
+            <p>
+              Explore rare releases, private tastings and regular coffee
+              deliveries. Email us to ask about joining the Inner Circle.
+            </p>
+            <form
+              action="mailto:pyae.2255phk@gmail.com"
+              class="members-form"
+              enctype="text/plain"
+              id="memberForm"
+              method="post"
+            >
+              <label>
+                <span> Name </span>
+                <input
+                  autocomplete="name"
+                  maxlength="80"
+                  name="name"
+                  required
+                  type="text"
+                />
+              </label>
+              <label>
+                <span> Email </span>
+                <input
+                  autocomplete="email"
+                  maxlength="254"
+                  name="email"
+                  required
+                  type="email"
+                />
+              </label>
+              <button class="btn request-access" type="submit">
+                Request Access
+              </button>
+            </form>
+            <p class="members-privacy">
+              Your details are included only in the email draft you choose to
+              send.
+            </p>
+          </div>
+          <div class="members-visual">
+            <div class="members-overlay">
+              <h3>Welcome to the Inner Circle</h3>
+              <p>Few receive this invitation. Many are inspired.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer aria-label="Luxury concierge footer" class="luxury-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Bean Boutique Concierge</h2>
+          <p>
+            For curated sourcing, private tastings, and bespoke blends, our
+            concierge team is at your service.
+          </p>
+          <div class="footer-video">
+            <h3>Coffee Moments</h3>
+            <iframe
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+              loading="lazy"
+              src="https://www.youtube.com/embed/wFut2zYOT7k?si=kW81jgtr7HmxKUh"
+              title="Coffee video supplied with the original project"
+            >
+            </iframe>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h3>Experience</h3>
+            <ul>
+              <li>
+                <a href="coffee_selection.html"> Coffee Selection </a>
+              </li>
+              <li>
+                <a href="BrewingEquipment.html"> Brewing Equipment </a>
+              </li>
+              <li>
+                <a href="event.html"> Events </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <ul>
+              <li>
+                <a data-open="contactPanel" href="#contactPanel">
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a data-open="locationPanel" href="#locationPanel">
+                  Location
+                </a>
+              </li>
+              <li>
+                <a data-open="policyPanel" href="#policyPanel"> Policy </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h3>Stay In Touch</h3>
+          <p>Prepare an email to ask about new coffees and club updates.</p>
+          <form
+            action="mailto:pyae.2255phk@gmail.com"
+            class="footer-form"
+            enctype="text/plain"
+            id="footerContactForm"
+            method="post"
+          >
+            <label class="visually-hidden" for="footerContactForm-email">
+              Email address
+            </label>
+            <input
+              autocomplete="email"
+              id="footerContactForm-email"
+              maxlength="254"
+              name="email"
+              placeholder="Email address"
+              required
+              type="email"
+            />
+            <button class="btn footer-btn" type="submit">
+              Email Concierge
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique &middot; Student website prototype</p>
+      </div>
+    </footer>
+    <div
+      aria-labelledby="welcomeDiscountModalTitle"
+      aria-modal="true"
+      class="modal"
+      hidden
+      id="welcomeDiscountModal"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog welcome-modal-dialog">
+        <button
+          aria-label="Close dialog"
+          class="modal-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+        <div class="modal-header">
+          <h2 class="modal-title" id="welcomeDiscountModalTitle">
+            Welcome to Bean Boutique!
+          </h2>
+        </div>
+        <div class="modal-body">
+          <form
+            action="mailto:pyae.2255phk@gmail.com"
+            enctype="text/plain"
+            id="welcomeDiscountForm"
+            method="post"
+          >
+            <p>
+              Enter your email to unlock
+              <strong> up to $10 OFF </strong>
+              your first order. The discount is saved to this browser; you can
+              email us to request club updates.
+            </p>
+            <label class="visually-hidden" for="welcomeDiscountForm-email">
+              Email address
+            </label>
+            <input
+              autocomplete="email"
+              id="welcomeDiscountForm-email"
+              maxlength="254"
+              name="email"
+              placeholder="Enter your email"
+              required
+              type="email"
+            />
+            <button class="btn welcome-btn" type="submit">
+              Claim My $10 Discount
+            </button>
+            <button
+              aria-label="Close dialog"
+              class="btn-secondary"
+              data-close-dialog
+              type="button"
+            >
+              Maybe later
+            </button>
+          </form>
+          <p class="welcome-note">
+            Demo offer: one welcome discount per browser. It cannot be combined
+            with the member discount. No email is stored on this device.
+          </p>
+          <div
+            class="welcome-error"
+            hidden
+            id="welcomeErrorMessage"
+            role="status"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-backdrop" hidden id="panelBackdrop"></div>
+    <div
+      aria-labelledby="contactPanelTitle"
+      aria-modal="true"
+      class="slide-panel"
+      hidden
+      id="contactPanel"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="slide-panel-header">
+        <h2 class="slide-panel-title" id="contactPanelTitle">Contact Us</h2>
+        <button
+          aria-label="Close contact panel"
+          class="slide-panel-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="slide-panel-content">
+        <h3>Get in Touch</h3>
+        <p>
+          Email:
+          <a href="mailto:pyae.2255phk@gmail.com"> pyae.2255phk@gmail.com </a>
+        </p>
+        <p>Send us a question about coffee, brewing equipment or an event.</p>
+        <h3>Our selected venue</h3>
+        <p>
+          Strategy First College &ndash; Yangon Teaching Centre 1
+          <br />
+          Myaynigone, Yangon, Myanmar
+        </p>
+        <button class="btn-secondary" data-open="locationPanel" type="button">
+          View location
+        </button>
+      </div>
+    </div>
+    <div
+      aria-labelledby="locationPanelTitle"
+      aria-modal="true"
+      class="slide-panel"
+      hidden
+      id="locationPanel"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="slide-panel-header">
+        <h2 class="slide-panel-title" id="locationPanelTitle">Our Location</h2>
+        <button
+          aria-label="Close location panel"
+          class="slide-panel-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="slide-panel-content">
+        <h3>Strategy First Myaynigone</h3>
+        <p>
+          Strategy First College &ndash; Yangon Teaching Centre 1
+          <br />
+          Myaynigone, Yangon, Myanmar
+        </p>
+        <p>
+          The venue selected for this student prototype. Please confirm
+          attendance and venue availability by email before travelling.
+        </p>
+        <div class="footer-locations">
+          <iframe
+            allowfullscreen
+            class="map-iframe"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5611.467732973025!2d96.13290718615393!3d16.802293475314606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb43fa921d1f%3A0xcd0eb4c146c271bd!2sStrategy%20First%20College%20-%20Yangon%20Teaching%20Centre%201!5e0!3m2!1sen!2smm!4v1789392054840!5m2!1sen!2smm"
+            title="Map of Strategy First College, Myaynigone, Yangon"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby="policyPanelTitle"
+      aria-modal="true"
+      class="slide-panel"
+      hidden
+      id="policyPanel"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="slide-panel-header">
+        <h2 class="slide-panel-title" id="policyPanelTitle">Policies</h2>
+        <button
+          aria-label="Close policy panel"
+          class="slide-panel-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="slide-panel-content">
+        <h3>Your information</h3>
+        <p>
+          Registration and concierge forms prepare an email to
+          pyae.2255phk@gmail.com. Review it and press Send in your email app. A
+          draft is not a confirmed booking.
+        </p>
+        <p>
+          Cart items, favourites and demo offer choices are saved in this
+          browser. Registration details are not saved in browser storage. Google
+          Maps and YouTube are third-party embeds and may receive connection
+          information when loaded.
+        </p>
+        <h3>Orders and subscriptions</h3>
+        <p>
+          Prices, promotions, delivery plans and event dates are illustrative.
+          Checkout is a demonstration: no payment is collected, no order is
+          placed and no subscription is started.
+        </p>
+        <h3>Discounts</h3>
+        <p>
+          The welcome offer takes up to $10 off merchandise. The member offer
+          takes 5% off merchandise. Choose one offer per cart; discounts never
+          exceed the subtotal. Eligibility is simulated on this device.
+        </p>
+      </div>
+    </div>
+    <div
+      aria-labelledby="emailTitle"
+      aria-modal="true"
+      class="modal"
+      hidden
+      id="emailModal"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <button
+          aria-label="Close email draft"
+          class="modal-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+        <h2 class="modal-title" id="emailTitle">Your email draft</h2>
+        <p class="modal-subtitle">
+          To:
+          <a href="mailto:pyae.2255phk@gmail.com"> pyae.2255phk@gmail.com </a>
+        </p>
+        <p class="modal-note">
+          Open your email app, review the draft and press Send. Your request is
+          confirmed only when the organiser replies.
+        </p>
+        <label class="draft-label" for="emailDraft"> Draft message </label>
+        <textarea
+          class="email-draft"
+          id="emailDraft"
+          readonly
+          rows="9"
+        ></textarea>
+        <div class="draft-actions">
+          <a
+            class="btn-primary"
+            href="mailto:pyae.2255phk@gmail.com"
+            id="openEmail"
+          >
+            Open email app
+          </a>
+          <button class="btn-secondary" id="copyEmail" type="button">
+            Copy draft
+          </button>
+        </div>
+        <p class="status" id="emailStatus" role="status"></p>
+      </div>
+    </div>
+    <p
+      aria-atomic="true"
+      aria-live="polite"
+      class="toast"
+      id="siteStatus"
+      role="status"
+    ></p>
+    <p class="storage-notice" hidden id="storageNotice" role="status"></p>
+    <noscript>
+      <p class="noscript-note">
+        Enable JavaScript to use cart, search and registration forms. You can
+        also contact
+        <a href="mailto:pyae.2255phk@gmail.com"> pyae.2255phk@gmail.com </a>
+        .
+      </p>
+    </noscript>
+  </body>
+</html>

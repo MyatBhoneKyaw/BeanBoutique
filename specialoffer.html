@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Special Offers &amp; Subscriptions | Bean Boutique</title>
+    <link href="style.css" rel="stylesheet" />
+    <meta
+      content="Special Offers &amp; Subscriptions at Bean Boutique: discover coffees, brewing tools and workshops in our interactive shop prototype."
+      name="description"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="page-specialoffer">
+    <a class="skip-link" href="#main-content"> Skip to main content </a>
+    <header class="site-header">
+      <div class="logo-container">
+        <a href="home.html">
+          <img
+            alt="Bean Boutique home"
+            src="image/a3933b448409cd6f92fd5e239f0c9370.jpg"
+          />
+        </a>
+      </div>
+      <div class="logo">
+        <a href="home.html"> Bean Boutique </a>
+      </div>
+      <nav aria-label="Main navigation" class="hamburger-nav">
+        <button
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          class="hamburger"
+          type="button"
+        >
+          <span class="bar"> </span>
+          <span class="bar"> </span>
+          <span class="bar"> </span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <a href="home.html"> Home </a>
+          </li>
+          <li>
+            <a href="coffee_selection.html"> Coffee Selection </a>
+          </li>
+          <li>
+            <a href="BrewingEquipment.html"> Brewing Equipment </a>
+          </li>
+          <li>
+            <a href="event.html"> Events </a>
+          </li>
+          <li>
+            <a aria-current="page" href="specialoffer.html"> Special Offers </a>
+          </li>
+          <li>
+            <a aria-label="Shopping Cart" class="cart-link" href="shoppingcart.html">
+              <svg
+                aria-hidden="true"
+                class="cart-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H7"></path>
+                <circle cx="10" cy="20" r="1.3"></circle>
+                <circle cx="18" cy="20" r="1.3"></circle>
+              </svg>
+              <span class="cart-label">Shopping Cart</span>
+              <span
+                aria-live="polite"
+                class="cart-counter hidden"
+                role="status"
+              >
+                0
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="shop-wrapper" id="main-content" tabindex="-1">
+      <section aria-label="Special offers" class="page-header">
+        <h1>Special Offers &amp; Subscriptions</h1>
+        <p>
+          A little extra for your daily ritual. Explore member benefits,
+          thoughtfully paired bundles and regular coffee deliveries.
+        </p>
+      </section>
+      <section
+        aria-label="The Inner Circle"
+        class="page-section"
+        id="inner-circle"
+      >
+        <div class="section-heading">
+          <h2>FOR MEMBERS ONLY</h2>
+          <p>
+            Explore Inner Circle benefits. Membership and discounts below are
+            demonstrated on this browser.
+          </p>
+        </div>
+        <div class="card-grid grid-3">
+          <article class="cards1">
+            <h3 class="hee">Membership Access</h3>
+            <p>
+              Join our Inner Circle to unlock exclusive artisan privileges and
+              private events.
+            </p>
+            <button
+              class="btn-primary"
+              data-action="membership"
+              id="join-family"
+              type="button"
+            >
+              Explore Membership
+            </button>
+          </article>
+          <article class="cards1">
+            <h3 class="hee">Exclusive Perk</h3>
+            <p>
+              Enjoy a 5% discount on any purchase whenever you want and free
+              delivery.
+            </p>
+            <button
+              class="btn-primary"
+              data-action="discount"
+              id="claim-discount"
+              type="button"
+            >
+              Claim My 5% Discount
+            </button>
+            <p class="status" id="discount-status" role="status"></p>
+            <p class="note">
+              Select Explore Membership first. Cannot be combined with the
+              welcome discount.
+            </p>
+          </article>
+          <article class="cards1">
+            <h3 class="hee">Bean Pass Advantage</h3>
+            <p>
+              Unlock special discounted rates when purchasing our curated Coffee
+              Bean Pass.
+            </p>
+            <button class="btn-secondary" data-action="view-pass" type="button">
+              View Pass Offers
+            </button>
+          </article>
+        </div>
+      </section>
+      <section
+        aria-label="Seasonal offers"
+        class="page-section countdown"
+        id="limited-offers"
+      >
+        <h2>LIMITED TIME OFFERS</h2>
+        <div
+          class="timer"
+          data-deadline="2026-11-30T23:59:59+06:30"
+          id="countdown-timer"
+        >
+          Seasonal offers end 30 November 2026
+        </div>
+        <p>
+          Illustrative seasonal promotion. Bundle prices are in USD;
+          availability must be confirmed.
+        </p>
+      </section>
+      <section
+        aria-label="Curated bundles"
+        class="page-section"
+        id="curated-bundles"
+      >
+        <h2>Curated Bundles</h2>
+        <div class="card-grid grid-2">
+          <article class="cards1">
+            <img
+              alt="Premium coffee beans"
+              class="product-img"
+              src="image/gcoffeepacka.png"
+            />
+            <h3>All-Variety Coffee Bean Pass</h3>
+            <p>
+              Annual plan: six 30 g tasting packs every month for 12 months.
+              Delivery included in this demo price.
+            </p>
+            <button class="btn-primary" data-add="bean-pass" type="button">
+              Add annual pass &middot; $999.99/year
+            </button>
+          </article>
+          <article class="cards1">
+            <img
+              alt="Double Grinder Bundle"
+              class="product-img"
+              src="image/Twocoffeegrinders150.png"
+            />
+            <h3>Double Grinder Bundle</h3>
+            <p>
+              Two manual grinders and two 250 g bags of house-blend beans.
+              One-time bundle.
+            </p>
+            <button class="btn-primary" data-add="grinder-duo" type="button">
+              Add bundle &middot; $279.99
+            </button>
+          </article>
+        </div>
+      </section>
+      <section
+        aria-labelledby="subscriptionHeading"
+        class="page-section"
+        id="subscriptions"
+      >
+        <h2 id="subscriptionHeading">Your Coffee, Delivered</h2>
+        <p>
+          Choose a regular rhythm. These are sample plans: selecting a plan
+          prepares an email enquiry and does not start a paid subscription.
+        </p>
+        <div class="card-grid grid-3">
+          <article class="cards1">
+            <h3>Discovery</h3>
+            <p class="tier-price">$18 / month</p>
+            <ul>
+              <li>One 250 g bag every month</li>
+              <li>Rotating single-origin coffee</li>
+              <li>Brewing notes included</li>
+              <li>Delivery included</li>
+            </ul>
+            <button
+              class="btn-primary"
+              data-plan="Discovery &mdash; $18/month, one 250 g bag monthly"
+              type="button"
+            >
+              Ask about Discovery
+            </button>
+          </article>
+          <article class="cards1 featured-plan">
+            <span class="event-tag"> Daily favourite </span>
+            <h3>Daily Ritual</h3>
+            <p class="tier-price">$32 / month</p>
+            <ul>
+              <li>Two 250 g bags every month</li>
+              <li>Choose house blend or single origin</li>
+              <li>Priority notice of workshops</li>
+              <li>Delivery included</li>
+            </ul>
+            <button
+              class="btn-primary"
+              data-plan="Daily Ritual &mdash; $32/month, two 250 g bags monthly"
+              type="button"
+            >
+              Ask about Daily Ritual
+            </button>
+          </article>
+          <article class="cards1">
+            <h3>Connoisseur</h3>
+            <p class="tier-price">$55 / month</p>
+            <ul>
+              <li>Two 250 g bags every two weeks</li>
+              <li>Seasonal coffee discoveries</li>
+              <li>Quarterly tasting invitation</li>
+              <li>Delivery included</li>
+            </ul>
+            <button
+              class="btn-primary"
+              data-plan="Connoisseur &mdash; $55/month, two 250 g bags every two weeks"
+              type="button"
+            >
+              Ask about Connoisseur
+            </button>
+          </article>
+        </div>
+      </section>
+      <section
+        aria-label="The Legacy Tier"
+        class="page-section"
+        id="legacy-tier"
+      >
+        <h2>Community Privileges</h2>
+        <div class="card-grid grid-2">
+          <article class="cards1">
+            <h3>Strategy First Student Privilege</h3>
+            <p>
+              Ask about the proposed student offers below. Student ID
+              verification would take place with staff; these offers are not
+              applied by this prototype.
+            </p>
+            <ul>
+              <li>10% Discount on all Coffee beverages.</li>
+              <li>5% Discount on all Coffee equipment.</li>
+            </ul>
+            <button
+              class="btn-secondary"
+              data-action="student-info"
+              type="button"
+            >
+              Please show your ID card to the shop staff
+            </button>
+          </article>
+          <article class="cards1">
+            <h3>Share the Craft</h3>
+            <p>
+              Introduce a friend to our coffees and workshops. Create an
+              invitation you can copy and share yourself.
+            </p>
+            <button class="btn-secondary" data-action="invite" type="button">
+              Invite a Friend
+            </button>
+          </article>
+        </div>
+      </section>
+    </main>
+    <div
+      aria-labelledby="offerModalTitle"
+      aria-modal="true"
+      class="offer-modal"
+      hidden
+      id="offerModal"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="offer-modal-content">
+        <button
+          aria-label="Close dialog"
+          class="offer-modal-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+        <h3 id="offerModalTitle">Special Offer</h3>
+        <p id="offerModalText"></p>
+      </div>
+    </div>
+    <footer aria-label="Luxury concierge footer" class="luxury-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Bean Boutique Concierge</h2>
+          <p>
+            For curated sourcing, private tastings, and bespoke blends, our
+            concierge team is at your service.
+          </p>
+          <div class="footer-video">
+            <h3>Coffee Moments</h3>
+            <iframe
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+              loading="lazy"
+              src="https://www.youtube.com/embed/wFut2zYOT7k?si=kW81jgtr7HmxKUh"
+              title="Coffee video supplied with the original project"
+            >
+            </iframe>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h3>Experience</h3>
+            <ul>
+              <li>
+                <a href="coffee_selection.html"> Coffee Selection </a>
+              </li>
+              <li>
+                <a href="BrewingEquipment.html"> Brewing Equipment </a>
+              </li>
+              <li>
+                <a href="event.html"> Events </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <ul>
+              <li>
+                <a data-open="contactPanel" href="#contactPanel">
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a data-open="locationPanel" href="#locationPanel">
+                  Location
+                </a>
+              </li>
+              <li>
+                <a data-open="policyPanel" href="#policyPanel"> Policy </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h3>Stay In Touch</h3>
+          <p>Prepare an email to ask about new coffees and club updates.</p>
+          <form
+            action="mailto:pyae.2255phk@gmail.com"
+            class="footer-form"
+            enctype="text/plain"
+            id="footerContactForm"
+            method="post"
+          >
+            <label class="visually-hidden" for="footerContactForm-email">
+              Email address
+            </label>
+            <input
+              autocomplete="email"
+              id="footerContactForm-email"
+              maxlength="254"
+              name="email"
+              placeholder="Email address"
+              required
+              type="email"
+            />
+            <button class="btn footer-btn" type="submit">
+              Email Concierge
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique &middot; Student website prototype</p>
+      </div>
+    </footer>
+    <div class="panel-backdrop" hidden id="panelBackdrop"></div>
+    <div
+      aria-labelledby="contactPanelTitle"
+      aria-modal="true"
+      class="slide-panel"
+      hidden
+      id="contactPanel"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="slide-panel-header">
+        <h2 class="slide-panel-title" id="contactPanelTitle">Contact Us</h2>
+        <button
+          aria-label="Close contact panel"
+          class="slide-panel-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="slide-panel-content">
+        <h3>Get in Touch</h3>
+        <p>
+          Email:
+          <a href="mailto:pyae.2255phk@gmail.com"> pyae.2255phk@gmail.com </a>
+        </p>
+        <p>Send us a question about coffee, brewing equipment or an event.</p>
+        <h3>Our selected venue</h3>
+        <p>
+          Strategy First College &ndash; Yangon Teaching Centre 1
+          <br />
+          Myaynigone, Yangon, Myanmar
+        </p>
+        <button class="btn-secondary" data-open="locationPanel" type="button">
+          View location
+        </button>
+      </div>
+    </div>
+    <div
+      aria-labelledby="locationPanelTitle"
+      aria-modal="true"
+      class="slide-panel"
+      hidden
+      id="locationPanel"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="slide-panel-header">
+        <h2 class="slide-panel-title" id="locationPanelTitle">Our Location</h2>
+        <button
+          aria-label="Close location panel"
+          class="slide-panel-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="slide-panel-content">
+        <h3>Strategy First Myaynigone</h3>
+        <p>
+          Strategy First College &ndash; Yangon Teaching Centre 1
+          <br />
+          Myaynigone, Yangon, Myanmar
+        </p>
+        <p>
+          The venue selected for this student prototype. Please confirm
+          attendance and venue availability by email before travelling.
+        </p>
+        <div class="footer-locations">
+          <iframe
+            allowfullscreen
+            class="map-iframe"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5611.467732973025!2d96.13290718615393!3d16.802293475314606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb43fa921d1f%3A0xcd0eb4c146c271bd!2sStrategy%20First%20College%20-%20Yangon%20Teaching%20Centre%201!5e0!3m2!1sen!2smm!4v1789392054840!5m2!1sen!2smm"
+            title="Map of Strategy First College, Myaynigone, Yangon"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby="policyPanelTitle"
+      aria-modal="true"
+      class="slide-panel"
+      hidden
+      id="policyPanel"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="slide-panel-header">
+        <h2 class="slide-panel-title" id="policyPanelTitle">Policies</h2>
+        <button
+          aria-label="Close policy panel"
+          class="slide-panel-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="slide-panel-content">
+        <h3>Your information</h3>
+        <p>
+          Registration and concierge forms prepare an email to
+          pyae.2255phk@gmail.com. Review it and press Send in your email app. A
+          draft is not a confirmed booking.
+        </p>
+        <p>
+          Cart items, favourites and demo offer choices are saved in this
+          browser. Registration details are not saved in browser storage. Google
+          Maps and YouTube are third-party embeds and may receive connection
+          information when loaded.
+        </p>
+        <h3>Orders and subscriptions</h3>
+        <p>
+          Prices, promotions, delivery plans and event dates are illustrative.
+          Checkout is a demonstration: no payment is collected, no order is
+          placed and no subscription is started.
+        </p>
+        <h3>Discounts</h3>
+        <p>
+          The welcome offer takes up to $10 off merchandise. The member offer
+          takes 5% off merchandise. Choose one offer per cart; discounts never
+          exceed the subtotal. Eligibility is simulated on this device.
+        </p>
+      </div>
+    </div>
+    <div
+      aria-labelledby="emailTitle"
+      aria-modal="true"
+      class="modal"
+      hidden
+      id="emailModal"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <button
+          aria-label="Close email draft"
+          class="modal-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+        <h2 class="modal-title" id="emailTitle">Your email draft</h2>
+        <p class="modal-subtitle">
+          To:
+          <a href="mailto:pyae.2255phk@gmail.com"> pyae.2255phk@gmail.com </a>
+        </p>
+        <p class="modal-note">
+          Open your email app, review the draft and press Send. Your request is
+          confirmed only when the organiser replies.
+        </p>
+        <label class="draft-label" for="emailDraft"> Draft message </label>
+        <textarea
+          class="email-draft"
+          id="emailDraft"
+          readonly
+          rows="9"
+        ></textarea>
+        <div class="draft-actions">
+          <a
+            class="btn-primary"
+            href="mailto:pyae.2255phk@gmail.com"
+            id="openEmail"
+          >
+            Open email app
+          </a>
+          <button class="btn-secondary" id="copyEmail" type="button">
+            Copy draft
+          </button>
+        </div>
+        <p class="status" id="emailStatus" role="status"></p>
+      </div>
+    </div>
+    <p
+      aria-atomic="true"
+      aria-live="polite"
+      class="toast"
+      id="siteStatus"
+      role="status"
+    ></p>
+    <p class="storage-notice" hidden id="storageNotice" role="status"></p>
+    <noscript>
+      <p class="noscript-note">
+        Enable JavaScript to use cart, search and registration forms. You can
+        also contact
+        <a href="mailto:pyae.2255phk@gmail.com"> pyae.2255phk@gmail.com </a>
+        .
+      </p>
+    </noscript>
+  </body>
+</html>

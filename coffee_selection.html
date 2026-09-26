@@ -1,0 +1,4336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Coffee Selection | Bean Boutique</title>
+    <link href="style.css" rel="stylesheet" />
+    <meta
+      content="Coffee Selection at Bean Boutique: discover coffees, brewing tools and workshops in our interactive shop prototype."
+      name="description"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="page-coffee_selection">
+    <a class="skip-link" href="#main-content"> Skip to main content </a>
+    <header class="site-header">
+      <div class="logo-container">
+        <a href="home.html">
+          <img
+            alt="Bean Boutique home"
+            src="image/a3933b448409cd6f92fd5e239f0c9370.jpg"
+          />
+        </a>
+      </div>
+      <div class="logo">
+        <a href="home.html"> Bean Boutique </a>
+      </div>
+      <nav aria-label="Main navigation" class="hamburger-nav">
+        <button
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          class="hamburger"
+          type="button"
+        >
+          <span class="bar"> </span>
+          <span class="bar"> </span>
+          <span class="bar"> </span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <a href="home.html"> Home </a>
+          </li>
+          <li>
+            <a aria-current="page" href="coffee_selection.html">
+              Coffee Selection
+            </a>
+          </li>
+          <li>
+            <a href="BrewingEquipment.html"> Brewing Equipment </a>
+          </li>
+          <li>
+            <a href="event.html"> Events </a>
+          </li>
+          <li>
+            <a href="specialoffer.html"> Special Offers </a>
+          </li>
+          <li>
+            <a aria-label="Shopping Cart" class="cart-link" href="shoppingcart.html">
+              <svg
+                aria-hidden="true"
+                class="cart-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H7"></path>
+                <circle cx="10" cy="20" r="1.3"></circle>
+                <circle cx="18" cy="20" r="1.3"></circle>
+              </svg>
+              <span class="cart-label">Shopping Cart</span>
+              <span
+                aria-live="polite"
+                class="cart-counter hidden"
+                role="status"
+              >
+                0
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <section aria-label="Hero search banner" class="hero-search">
+        <div class="hero-search-content">
+          <h1>Find Your Perfect Coffee</h1>
+          <p>
+            Explore blends, single origins and caf&eacute; favourites.
+            Illustrative products and prices in USD.
+          </p>
+<div class="catalogue-toolbar">
+          <div class="hero-search-wrap">
+            <svg aria-hidden="true" class="search-icon" viewbox="0 0 24 24">
+              <circle cx="10.5" cy="10.5" r="6.5"></circle>
+              <path d="m16 16 5 5"></path>
+            </svg>
+            <input
+              aria-describedby="searchResults"
+              aria-label="Search coffee catalogue"
+              autocomplete="off"
+              id="search"
+              maxlength="100"
+              placeholder="Search coffee, flavour or brew method&hellip;"
+              type="search"
+            />
+            <button
+              aria-label="Clear search"
+              class="clear-search"
+              hidden
+              id="clearSearch"
+              type="button"
+            >
+              &times;
+            </button>
+          </div>
+<details class="category-dropdown">
+<summary class="category-toggle"><span class="category-label">All Categories</span><span class="category-chevron" aria-hidden="true">⌄</span></summary>
+          <div
+            aria-label="Coffee category filters"
+            class="filter-row"
+            role="group"
+          >
+            <button
+              aria-pressed="true"
+              class="filter-btn allbtn active"
+              data-category="all"
+              type="button"
+            >
+              All
+            </button>
+            <button
+              aria-pressed="false"
+              class="filter-btn powderbtn"
+              data-category="powder"
+              type="button"
+            >
+              Powder
+            </button>
+            <button
+              aria-pressed="false"
+              class="filter-btn beanbtn"
+              data-category="bean"
+              type="button"
+            >
+              Bean
+            </button>
+            <button
+              aria-pressed="false"
+              class="filter-btn Espbtn"
+              data-category="espresso"
+              type="button"
+            >
+              Espresso-Based
+            </button>
+            <button
+              aria-pressed="false"
+              class="filter-btn icebtn"
+              data-category="cold"
+              type="button"
+            >
+              Cold Drinks
+            </button>
+            <button
+              aria-pressed="false"
+              class="filter-btn intbtn"
+              data-category="international"
+              type="button"
+            >
+              International
+            </button>
+            <button
+              aria-pressed="false"
+              class="filter-btn PV"
+              data-category="popular"
+              type="button"
+            >
+              Popular Variations
+            </button>
+            <button
+              aria-pressed="false"
+              class="filter-btn HotBtn"
+              data-category="hot"
+              type="button"
+            >
+              Hot Drinks
+            </button>
+            <button
+              aria-pressed="false"
+              class="filter-btn bestsellerbtn"
+              data-category="bestseller"
+              type="button"
+            >
+              Best Sellers
+            </button>
+            <button
+              aria-pressed="false"
+              class="filter-btn cakebtn"
+              data-category="cake"
+              type="button"
+            >
+              Cake
+            </button>
+            <button
+              aria-pressed="false"
+              class="filter-btn breadbtn"
+              data-category="bread"
+              type="button"
+            >
+              Bread
+            </button>
+            <button
+              aria-pressed="false"
+              class="filter-btn"
+              data-category="blend"
+              type="button"
+            >
+              Our Blend
+            </button>
+          </div>
+</details>
+</div>
+<div class="catalogue-meta">
+          <p
+            aria-live="polite"
+            class="search-results"
+            id="searchResults"
+            role="status"
+          ></p>
+          <button
+            aria-pressed="false"
+            class="filter-btn favourites-filter"
+            type="button"
+          >
+            Favourites only
+          </button>
+</div>
+        </div>
+      </section>
+      <div class="coffee-selection" id="productGrid">
+        <article
+          class="card expresso HouseBlend"
+          data-category="bean blend bestseller"
+          data-product-id="signature-house-blend"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Signature House Blend to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="signature-house-blend"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">House Blend</div>
+          <div class="content">
+            <h2 class="tagline2">Signature House Blend</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Signature House Blend"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/ArabicaBeanswith_p.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$30.99</div>
+            <div class="sty">
+              <div class="Hot">Coffee Beans</div>
+              <div class="details">
+                Our balanced Arabica and Robusta blend.
+                <strong class="detail-label">Tasting notes:</strong> cocoa,
+                caramel and roasted nuts.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso or moka pot. Whole beans &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Signature House Blend to cart"
+                class="addBtn"
+                data-add="signature-house-blend"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso Arabicapowder"
+          data-category="powder"
+          data-product-id="arabica-medium-fine"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Arabica (Medium Fine) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="arabica-medium-fine"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Arabic Powder</div>
+          <div class="content">
+            <h2 class="tagline2">Arabica (Medium Fine)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Arabica (Medium Fine)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Arabicapowderwith.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$12.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Smooth, mild flavor profile with notes of chocolate and caramel
+                <br />
+                <strong class="detail-label">Tasting Note -</strong> Smooth,
+                balanced, mild acidity with chocolate and nutty notes.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                Pour-over Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Arabica (Medium Fine) to cart"
+                class="addBtn"
+                data-add="arabica-medium-fine"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso Arabicapowder"
+          data-category="powder"
+          data-product-id="arabica-powder-fine"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Arabica Powder(Fine) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="arabica-powder-fine"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Arabic Powder</div>
+          <div class="content">
+            <h2 class="tagline3">Arabica Powder(Fine)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Arabica Powder(Fine)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Arabicapowderwith.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$13.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Smooth, mild flavor profile with notes of chocolate and caramel
+                <br />
+                <strong class="detail-label">Tasting Note -</strong> Stronger
+                body, caramel undertones, slightly bitter.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                Espresso Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Arabica Powder(Fine) to cart"
+                class="addBtn"
+                data-add="arabica-powder-fine"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso Arabicapowder"
+          data-category="powder"
+          data-product-id="arabica-powder-extra-fine"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Arabica Powder(Extra Fine) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="arabica-powder-extra-fine"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Arabic Powder</div>
+          <div class="content">
+            <h2 class="tagline3">Arabica Powder(Extra Fine)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Arabica Powder(Extra Fine)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Arabicapowderwith.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$15.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Smooth, mild flavor profile with notes of chocolate and caramel
+                <br />
+                <strong class="detail-label">Tasting Note -</strong> Rich,
+                velvety, floral hints, sediment texture.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                Arabic coffee Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Arabica Powder(Extra Fine) to cart"
+                class="addBtn"
+                data-add="arabica-powder-extra-fine"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso Robustapowder"
+          data-category="powder"
+          data-product-id="robusta-powder-fine"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Robusta powder (Fine) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="robusta-powder-fine"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Robusta Powder</div>
+          <div class="content">
+            <h2 class="tagline3">Robusta powder (Fine)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Robusta powder (Fine)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Robustapowderwithf.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$8.99</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Bold and strong with higher caffeine content, perfect for
+                espresso.
+                <br />
+                <strong class="detail-label">Tasting Notes-</strong>Bold,
+                bitter, earthy
+                <br />
+                <strong class="detail-label">Recommended Brewing-</strong>Moka
+                pot Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Robusta powder (Fine) to cart"
+                class="addBtn"
+                data-add="robusta-powder-fine"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso Robustapowder"
+          data-category="powder"
+          data-product-id="robusta-powder-medium"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Robusta Powder(medium) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="robusta-powder-medium"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Robusta Powder</div>
+          <div class="content">
+            <h2 class="tagline3">Robusta Powder(medium)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Robusta Powder(medium)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Robustapowdermedi.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$9.99</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Bold and strong with higher caffeine content, perfect for
+                espresso.
+                <br />
+                <strong class="detail-label">Tasting Notes-</strong>Strong but
+                smoother,with chocolate undertones
+                <br />
+                <strong class="detail-label">Recommended Brewing-</strong
+                >AeroPress Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Robusta Powder(medium) to cart"
+                class="addBtn"
+                data-add="robusta-powder-medium"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso Robustapowder"
+          data-category="powder"
+          data-product-id="robusta-powder-extra-coarse"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Robusta Powder(extra coarse) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="robusta-powder-extra-coarse"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Robusta Powder</div>
+          <div class="content">
+            <h2 class="tagline4">Robusta Powder(extra coarse)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Robusta Powder(extra coarse)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Robustapowderextr.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$11.99</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Bold ground Robusta.
+                <strong class="detail-label">Tasting notes:</strong> earthy
+                cocoa.
+                <strong class="detail-label">Recommended brewing:</strong> cold
+                brew. Extra coarse &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Robusta Powder(extra coarse) to cart"
+                class="addBtn"
+                data-add="robusta-powder-extra-coarse"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso Bourbonpowder"
+          data-category="powder"
+          data-product-id="bourbon-powder-fine"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Bourbon powder(fine) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="bourbon-powder-fine"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Bourbon powder</div>
+          <div class="content">
+            <h2 class="tagline3">Bourbon powder(fine)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Bourbon powder(fine)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Bourbonpowderfine.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$15.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Rare heirloom variety with complex fruity and floral notes.
+                <br />
+                <strong class="detail-label">Tasting Notes -</strong> Fuller
+                body, caramel undertones, slightly stronger bitterness.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                Espresso Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Bourbon powder(fine) to cart"
+                class="addBtn"
+                data-add="bourbon-powder-fine"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso Bourbonpowder"
+          data-category="powder"
+          data-product-id="bourbon-powder-medium-coarse"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Bourbon powder(medium coarse) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="bourbon-powder-medium-coarse"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Bourbon powder</div>
+          <div class="content">
+            <h2 class="tagline4">Bourbon powder(medium coarse)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Bourbon powder(medium coarse)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Bourbonpowdermedi.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$13.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Rare heirloom variety with complex fruity and floral notes.
+                <br />
+                <strong class="detail-label">Tasting Notes -</strong> Nutty,
+                earthy, with lower acidity and a rounder mouthfeel.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                French press Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Bourbon powder(medium coarse) to cart"
+                class="addBtn"
+                data-add="bourbon-powder-medium-coarse"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso Bourbonpowder"
+          data-category="powder"
+          data-product-id="bourbon-powder-medium-fine"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Bourbon powder(medium fine) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="bourbon-powder-medium-fine"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Bourbon powder</div>
+          <div class="content">
+            <h2 class="tagline4">Bourbon powder(medium fine)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Bourbon powder(medium fine)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Bourbonpowdermedif.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$14.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Rare heirloom variety with complex fruity and floral notes.
+                <br />
+                <strong class="detail-label">Tasting Notes -</strong> Smooth,
+                balanced, with mild acidity and chocolate sweetness.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                Pour-over Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Bourbon powder(medium fine) to cart"
+                class="addBtn"
+                data-add="bourbon-powder-medium-fine"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso CatimorPowder"
+          data-category="powder"
+          data-product-id="catimor-powder-extra-fine"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Catimor Powder(extra fine) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="catimor-powder-extra-fine"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Catimor Powder</div>
+          <div class="content">
+            <h2 class="tagline4">Catimor Powder(extra fine)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Catimor Powder(extra fine)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Catimorpowderextr.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$12.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Disease-resistant hybrid with balanced acidity and body.
+                <br />
+                <strong class="detail-label">Tasting Note -</strong> Citrus
+                brightness, cocoa depth, floral aromatics.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                Espresso Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Catimor Powder(extra fine) to cart"
+                class="addBtn"
+                data-add="catimor-powder-extra-fine"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso CatimorPowder"
+          data-category="powder"
+          data-product-id="catimor-powder-medium"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Catimor Powder(medium) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="catimor-powder-medium"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Catimor Powder</div>
+          <div class="content">
+            <h2 class="tagline4">Catimor Powder(medium)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Catimor Powder(medium)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Catimorpowdermedi.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$10.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Disease-resistant hybrid with balanced acidity and body.
+                <br />
+                <strong class="detail-label">Tasting Note -</strong> Clean
+                acidity, stone fruit sweetness, balanced body.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                Pour-over Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Catimor Powder(medium) to cart"
+                class="addBtn"
+                data-add="catimor-powder-medium"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso CatimorPowder"
+          data-category="powder"
+          data-product-id="catimor-powder-coarse"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Catimor Powder(coarse) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="catimor-powder-coarse"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Catimor Powder</div>
+          <div class="content">
+            <h2 class="tagline3">Catimor Powder(coarse)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Catimor Powder(coarse)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Catimorpowdercoar.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$9.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Disease-resistant hybrid with balanced acidity and body.
+                <br />
+                <strong class="detail-label">Tasting Note -</strong> Rustic,
+                earthy, lower acidity, smooth finish.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                French press Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Catimor Powder(coarse) to cart"
+                class="addBtn"
+                data-add="catimor-powder-coarse"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso GeishaPowder"
+          data-category="powder"
+          data-product-id="geisha-powder-coarse"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Geisha Powder(coarse) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="geisha-powder-coarse"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Geisha Powder</div>
+          <div class="content">
+            <h2 class="tagline3">Geisha Powder(coarse)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Geisha Powder(coarse)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Geishapowdercoars.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$20.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Exotic and rare with unique floral and tea-like characteristics.
+                <br />
+                <strong class="detail-label">Tasting Note -</strong> Tea-like,
+                floral, delicate, light body.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                French press Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Geisha Powder(coarse) to cart"
+                class="addBtn"
+                data-add="geisha-powder-coarse"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso GeishaPowder"
+          data-category="powder"
+          data-product-id="geisha-powder-extra-fine"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Geisha Powder(extra fine) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="geisha-powder-extra-fine"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Geisha Powder</div>
+          <div class="content">
+            <h2 class="tagline4">Geisha Powder(extra fine)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Geisha Powder(extra fine)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Geishapowderextraf.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$25.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Exotic and rare with unique floral and tea-like characteristics.
+                <br />
+                <strong class="detail-label">Tasting Note -</strong> Intense
+                floral, jasmine, bergamot, silky texture.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                Turkish coffee Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Geisha Powder(extra fine) to cart"
+                class="addBtn"
+                data-add="geisha-powder-extra-fine"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso GeishaPowder"
+          data-category="powder"
+          data-product-id="geisha-powder-fine"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Geisha Powder(fine) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="geisha-powder-fine"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Geisha Powder</div>
+          <div class="content">
+            <h2 class="tagline4">Geisha Powder(fine)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Geisha Powder(fine)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Geishapowderfine.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$22.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Exotic and rare with unique floral and tea-like characteristics.
+                <br />
+                <strong class="detail-label">Tasting Note -</strong> Bright
+                acidity, honey sweetness, complex layers.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                Espresso Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Geisha Powder(fine) to cart"
+                class="addBtn"
+                data-add="geisha-powder-fine"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso GeishaPowder"
+          data-category="powder"
+          data-product-id="geisha-powder-medium"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Geisha Powder(medium) to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="geisha-powder-medium"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Geisha Powder</div>
+          <div class="content">
+            <h2 class="tagline4">Geisha Powder(medium)</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Geisha Powder(medium)"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/Geishapowdermediu.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$20.00</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Exotic and rare with unique floral and tea-like characteristics.
+                <br />
+                <strong class="detail-label">Tasting Note -</strong> Elegant,
+                balanced, tea-like clarity, citrus.
+                <br />
+                <strong class="detail-label">Recommended Brewing -</strong>
+                Pour-over Ground coffee &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Geisha Powder(medium) to cart"
+                class="addBtn"
+                data-add="geisha-powder-medium"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso Coffeecreamer"
+          data-category="powder"
+          data-product-id="coffee-creamer"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Coffee Creamer to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="coffee-creamer"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Coffee Creamer</div>
+          <div class="content">
+            <h2 class="tagline2">Coffee Creamer</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Coffee Creamer"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/CoffeeCreamerwith.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$12.99</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Rich and creamy creamer made from real dairy for smooth coffee
+                drinks.
+              </div>
+
+              <button
+                aria-label="Add Coffee Creamer to cart"
+                class="addBtn"
+                data-add="coffee-creamer"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso MilkPowder"
+          data-category="powder"
+          data-product-id="milk-powder"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Milk Powder to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="milk-powder"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Milk Powder</div>
+          <div class="content">
+            <h2 class="tagline2">Milk Powder</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Milk Powder"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/MilkPowderwithpap.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$9.99</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Instant milk powder for quick preparation of lattes and
+                cappuccinos.
+              </div>
+
+              <button
+                aria-label="Add Milk Powder to cart"
+                class="addBtn"
+                data-add="milk-powder"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso SpecialtySugar"
+          data-category="powder"
+          data-product-id="specialty-sugar"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Specialty Sugar to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="specialty-sugar"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Specialty Sugar</div>
+          <div class="content">
+            <h2 class="tagline2">Specialty Sugar</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Specialty Sugar"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/SpecialtySugarwith.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$7.99</div>
+            <div class="sty">
+              <div class="Hot">Powder</div>
+              <div class="details">
+                Raw cane sugar crystals for natural sweetness in your coffee.
+              </div>
+
+              <button
+                aria-label="Add Specialty Sugar to cart"
+                class="addBtn"
+                data-add="specialty-sugar"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso ArabicaBeans"
+          data-category="bean"
+          data-product-id="arabica-beans"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Arabica Beans to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="arabica-beans"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Arabica Beans</div>
+          <div class="content">
+            <h2 class="tagline2">Arabica Beans</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Arabica Beans"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/ArabicaBeanswith_p.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$32.99</div>
+            <div class="sty">
+              <div class="Hot">Coffee Beans</div>
+              <div class="details">
+                Single-origin Myanmar coffee.
+                <strong class="detail-label">Tasting notes:</strong> chocolate
+                and caramel.
+                <strong class="detail-label">Recommended brewing:</strong>
+                pour-over. Whole beans &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Arabica Beans to cart"
+                class="addBtn"
+                data-add="arabica-beans"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso RobustaBeans"
+          data-category="bean"
+          data-product-id="robusta-beans"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Robusta Beans to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="robusta-beans"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Robusta Beans</div>
+          <div class="content">
+            <h2 class="tagline2">Robusta Beans</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Robusta Beans"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/RobustaBeansp.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$28.99</div>
+            <div class="sty">
+              <div class="Hot">Coffee Beans</div>
+              <div class="details">
+                Single-origin Vietnam coffee.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                toasted nuts.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso. Whole beans &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Robusta Beans to cart"
+                class="addBtn"
+                data-add="robusta-beans"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso BourbonBeans"
+          data-category="bean"
+          data-product-id="bourbon-beans"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Bourbon Beans to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="bourbon-beans"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Bourbon Beans</div>
+          <div class="content">
+            <h2 class="tagline2">Bourbon Beans</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Bourbon Beans"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/BourbonBeanswithp.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$45.99</div>
+            <div class="sty">
+              <div class="Hot">Coffee Beans</div>
+              <div class="details">
+                Single-origin Rwanda coffee.
+                <strong class="detail-label">Tasting notes:</strong> red fruit
+                and caramel.
+                <strong class="detail-label">Recommended brewing:</strong>
+                pour-over. Whole beans &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Bourbon Beans to cart"
+                class="addBtn"
+                data-add="bourbon-beans"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso CatimorBeans"
+          data-category="bean"
+          data-product-id="catimor-beans"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Catimor Beans to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="catimor-beans"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Catimor Beans</div>
+          <div class="content">
+            <h2 class="tagline2">Catimor Beans</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Catimor Beans"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/CatimorBeanswithp.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$29.99</div>
+            <div class="sty">
+              <div class="Hot">Coffee Beans</div>
+              <div class="details">
+                Single-origin Myanmar coffee.
+                <strong class="detail-label">Tasting notes:</strong> citrus and
+                cocoa.
+                <strong class="detail-label">Recommended brewing:</strong>
+                French press. Whole beans &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Catimor Beans to cart"
+                class="addBtn"
+                data-add="catimor-beans"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso CaturraBeans"
+          data-category="bean"
+          data-product-id="caturra-beans"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Caturra Beans to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="caturra-beans"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Caturra Beans</div>
+          <div class="content">
+            <h2 class="tagline2">Caturra Beans</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Caturra Beans"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/CaturraBeanswithp.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$34.99</div>
+            <div class="sty">
+              <div class="Hot">Coffee Beans</div>
+              <div class="details">
+                Single-origin Colombia coffee.
+                <strong class="detail-label">Tasting notes:</strong> apple and
+                brown sugar.
+                <strong class="detail-label">Recommended brewing:</strong> drip.
+                Whole beans &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Caturra Beans to cart"
+                class="addBtn"
+                data-add="caturra-beans"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso GeishaBeans"
+          data-category="bean"
+          data-product-id="geisha-beans"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Geisha Beans to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="geisha-beans"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Geisha Beans</div>
+          <div class="content">
+            <h2 class="tagline2">Geisha Beans</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Geisha Beans"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/GeishaBeanswithpa.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$89.99</div>
+            <div class="sty">
+              <div class="Hot">Coffee Beans</div>
+              <div class="details">
+                Single-origin Panama coffee.
+                <strong class="detail-label">Tasting notes:</strong> jasmine and
+                bergamot.
+                <strong class="detail-label">Recommended brewing:</strong>
+                pour-over. Whole beans &middot; 250 g.
+              </div>
+
+              <button
+                aria-label="Add Geisha Beans to cart"
+                class="addBtn"
+                data-add="geisha-beans"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso espresso"
+          data-category="espresso hot bestseller"
+          data-product-id="espresso"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Espresso to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="espresso"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Espresso</div>
+          <div class="content">
+            <h2 class="tagline">Espresso</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Espresso"
+                class="coffee expresso"
+                decoding="async"
+                loading="lazy"
+                src="image/download(1).png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$4.50</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                A strong, concentrated coffee shot with rich crema on top.
+                <strong class="detail-label">Tasting notes:</strong> bold roast
+                and cocoa.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Espresso to cart"
+                class="addBtn"
+                data-add="espresso"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso latte"
+          data-category="espresso hot bestseller"
+          data-product-id="latte"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Latte to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="latte"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark">Latte</div>
+          <div class="content">
+            <h2 class="tagline">Latte</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Latte"
+                class="coffee latte"
+                decoding="async"
+                loading="lazy"
+                src="image/download.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$6.75</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Espresso blended with steamed milk and light foam, mild and
+                creamy.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                creamy sweetness.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Latte to cart"
+                class="addBtn"
+                data-add="latte"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso cappuccino"
+          data-category="espresso hot bestseller"
+          data-product-id="cappuccino"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Cappuccino to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="cappuccino"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Cappuccino</div>
+          <div class="content">
+            <h2 class="tagline">Cappuccino</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Cappuccino"
+                class="coffee cappuccino"
+                decoding="async"
+                loading="lazy"
+                src="image/Cappuccino.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$6.00</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Equal parts espresso, steamed milk, and milk foam.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                creamy sweetness.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Cappuccino to cart"
+                class="addBtn"
+                data-add="cappuccino"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso americano"
+          data-category="espresso hot bestseller"
+          data-product-id="americano"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Americano to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="americano"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Americano</div>
+          <div class="content">
+            <h2 class="tagline">Americano</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Americano"
+                class="coffee americano"
+                decoding="async"
+                loading="lazy"
+                src="image/Americano.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$5.00</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Espresso diluted with hot water, similar to drip coffee.
+                <strong class="detail-label">Tasting notes:</strong> bold roast
+                and cocoa.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Americano to cart"
+                class="addBtn"
+                data-add="americano"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso mocha"
+          data-category="espresso hot bestseller"
+          data-product-id="mocha"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Mocha to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="mocha"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Mocha</div>
+          <div class="content">
+            <h2 class="tagline">Mocha</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Mocha"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Mocha3.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$7.25</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Espresso with chocolate syrup and steamed milk, sometimes topped
+                with whipped cream.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                creamy sweetness.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Mocha to cart"
+                class="addBtn"
+                data-add="mocha"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso macchiato"
+          data-category="espresso hot"
+          data-product-id="macchiato"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Macchiato to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="macchiato"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Macchiato</div>
+          <div class="content">
+            <h2 class="tagline">Macchiato</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Macchiato"
+                class="coffee macchiato"
+                decoding="async"
+                loading="lazy"
+                src="image/maccc.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$5.25</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Espresso topped with a small amount of milk foam.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                creamy sweetness.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Macchiato to cart"
+                class="addBtn"
+                data-add="macchiato"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso flatwhite"
+          data-category="espresso hot"
+          data-product-id="flat-white"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Flat White to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="flat-white"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">FlatWhite</div>
+          <div class="content">
+            <h2 class="tagline">Flat White</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Flat White"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/white.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$6.25</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Espresso with micro-foamed milk, creamy texture, stronger coffee
+                taste.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                creamy sweetness.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Flat White to cart"
+                class="addBtn"
+                data-add="flat-white"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso lungo"
+          data-category="espresso hot"
+          data-product-id="lungo"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Lungo to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="lungo"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Lungo</div>
+          <div class="content">
+            <h2 class="tagline">Lungo</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Lungo"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/lug.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$5.00</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Espresso brewed with extra water, milder than a regular shot.
+                <strong class="detail-label">Tasting notes:</strong> bold roast
+                and cocoa.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Lungo to cart"
+                class="addBtn"
+                data-add="lungo"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso ristretto"
+          data-category="espresso hot"
+          data-product-id="ristretto"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Ristretto to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="ristretto"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Ristretto</div>
+          <div class="content">
+            <h2 class="tagline">Ristretto</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Ristretto"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/ris.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$4.50</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Short, concentrated espresso with bold flavor.
+                <strong class="detail-label">Tasting notes:</strong> bold roast
+                and cocoa.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Ristretto to cart"
+                class="addBtn"
+                data-add="ristretto"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso doppio"
+          data-category="espresso hot"
+          data-product-id="doppio"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Doppio to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="doppio"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Doppio</div>
+          <div class="content">
+            <h2 class="tagline">Doppio</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Doppio"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/dip.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$5.00</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Double shot of espresso, stronger and more flavorful.
+                <strong class="detail-label">Tasting notes:</strong> bold roast
+                and cocoa.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Doppio to cart"
+                class="addBtn"
+                data-add="doppio"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso icedlatte"
+          data-category="cold bestseller"
+          data-product-id="iced-latte"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Iced Latte to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="iced-latte"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Iced Latte</div>
+          <div class="content">
+            <h2 class="tagline">Iced Latte</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Iced Latte"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/latice.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$7.00</div>
+            <div class="sty">
+              <div class="Cold">Cold Drink</div>
+              <div class="details">
+                Chilled latte served with ice cubes.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                creamy sweetness.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Iced Latte to cart"
+                class="addBtn"
+                data-add="iced-latte"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso icedmocha"
+          data-category="cold"
+          data-product-id="iced-mocha"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Iced Mocha to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="iced-mocha"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Iced Mocha</div>
+          <div class="content">
+            <h2 class="tagline1">Iced Mocha</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Iced Mocha"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Icemochacoffeein.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$7.50</div>
+            <div class="sty">
+              <div class="Cold">Cold Drink</div>
+              <div class="details">
+                Chocolate-flavored iced coffee with milk.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                creamy sweetness.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Iced Mocha to cart"
+                class="addBtn"
+                data-add="iced-mocha"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso coldbrew"
+          data-category="cold"
+          data-product-id="cold-brew"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Cold Brew to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="cold-brew"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Cold Brew</div>
+          <div class="content">
+            <h2 class="tagline1">Cold Brew</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Cold Brew"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Coldbrewcoffeein.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$6.50</div>
+            <div class="sty">
+              <div class="Cold">Cold Drink</div>
+              <div class="details">
+                Coffee steeped in cold water for hours, smooth and low-acid.
+                <strong class="detail-label">Tasting notes:</strong> bold roast
+                and cocoa.
+                <strong class="detail-label">Recommended brewing:</strong> cold
+                steeping.
+              </div>
+
+              <button
+                aria-label="Add Cold Brew to cart"
+                class="addBtn"
+                data-add="cold-brew"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso nitro"
+          data-category="cold"
+          data-product-id="nitro-cold-brew"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Nitro Cold Brew to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="nitro-cold-brew"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Nitro Coffee</div>
+          <div class="content">
+            <h2 class="tagline1">Nitro Cold Brew</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Nitro Cold Brew"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Largenitrocoffeei.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$8.00</div>
+            <div class="sty">
+              <div class="Cold">Cold Drink</div>
+              <div class="details">
+                Cold brew infused with nitrogen gas, creamy and foamy.
+                <strong class="detail-label">Tasting notes:</strong> bold roast
+                and cocoa.
+                <strong class="detail-label">Recommended brewing:</strong> cold
+                steeping.
+              </div>
+
+              <button
+                aria-label="Add Nitro Cold Brew to cart"
+                class="addBtn"
+                data-add="nitro-cold-brew"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso frapp&eacute;"
+          data-category="cold"
+          data-product-id="frapp"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Frapp&eacute; to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="frapp"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Frapp&eacute;</div>
+          <div class="content">
+            <h2 class="tagline">Frapp&eacute;</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Frapp&eacute;"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Largefrapp&eacute;coffee.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$7.50</div>
+            <div class="sty">
+              <div class="Cold">Cold Drink</div>
+              <div class="details">
+                Blended iced coffee, often sweetened and topped with foam or
+                whipped cream.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                creamy sweetness.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Frapp&eacute; to cart"
+                class="addBtn"
+                data-add="frapp"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso irishcoffee"
+          data-category="international hot"
+          data-product-id="irish-coffee"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Irish Coffee to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="irish-coffee"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Irish Coffee</div>
+          <div class="content">
+            <h2 class="tagline1">Irish Coffee</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Irish Coffee"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/HotIrishcoffeein.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$10.00</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Hot coffee mixed with whiskey, sugar, and cream.
+                <strong class="detail-label">Tasting notes:</strong> bold roast
+                and cocoa.
+                <strong class="detail-label">Recommended brewing:</strong>
+                freshly brewed filter coffee.
+              </div>
+
+              <button
+                aria-label="Add Irish Coffee to cart"
+                class="addBtn"
+                data-add="irish-coffee"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso vietnamesecoffee"
+          data-category="international hot"
+          data-product-id="vietnamese-coffee"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Vietnamese Coffee to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="vietnamese-coffee"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Vietnamese Coffee</div>
+          <div class="content">
+            <h2 class="tagline2">Vietnamese Coffee</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Vietnamese Coffee"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/HotVietnamesecoffe.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$6.50</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Strong drip coffee with sweetened condensed milk.
+                <strong class="detail-label">Tasting notes:</strong> bold roast
+                and cocoa.
+                <strong class="detail-label">Recommended brewing:</strong> phin
+                filter.
+              </div>
+
+              <button
+                aria-label="Add Vietnamese Coffee to cart"
+                class="addBtn"
+                data-add="vietnamese-coffee"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso turkishcoffee"
+          data-category="international hot"
+          data-product-id="turkish-coffee"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Turkish Coffee to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="turkish-coffee"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Turkish Coffee</div>
+          <div class="content">
+            <h2 class="tagline2">Turkish Coffee</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Turkish Coffee"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/HotTurkishcoffeei.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$6.50</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Finely ground coffee brewed in a cezve, served unfiltered.
+                <strong class="detail-label">Tasting notes:</strong> bold roast
+                and cocoa.
+                <strong class="detail-label">Recommended brewing:</strong> cezve
+                or briki.
+              </div>
+
+              <button
+                aria-label="Add Turkish Coffee to cart"
+                class="addBtn"
+                data-add="turkish-coffee"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso greekcoffee"
+          data-category="international hot"
+          data-product-id="greek-coffee"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Greek Coffee to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="greek-coffee"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Greek Coffee</div>
+          <div class="content">
+            <h2 class="tagline1">Greek Coffee</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Greek Coffee"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/HotGreekcoffeein.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$6.50</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Finely ground coffee gently heated in a briki and served
+                unfiltered.
+                <strong class="detail-label">Tasting notes:</strong> rich cocoa
+                and a lasting finish.
+                <strong class="detail-label">Brewing:</strong> briki.
+              </div>
+
+              <button
+                aria-label="Add Greek Coffee to cart"
+                class="addBtn"
+                data-add="greek-coffee"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso whitecoffee"
+          data-category="cold international bestseller"
+          data-product-id="white-coffee"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save White Coffee to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="white-coffee"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">White Coffee</div>
+          <div class="content">
+            <h2 class="tagline1">White Coffee</h2>
+            <div class="coffee-warp">
+              <img
+                alt="White Coffee"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Whitecoffeeinlarg.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$5.50</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Made from lightly roasted beans, mild taste, higher caffeine.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                creamy sweetness.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add White Coffee to cart"
+                class="addBtn"
+                data-add="white-coffee"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso affogato"
+          data-category="cold international"
+          data-product-id="affogato"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Affogato to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="affogato"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Affogato</div>
+          <div class="content">
+            <h2 class="tagline">Affogato</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Affogato"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Coldaffogatoinlar.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$8.50</div>
+            <div class="sty">
+              <div class="Cold">Cold Drink</div>
+              <div class="details">
+                Espresso poured over a scoop of ice cream, dessert-style.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                creamy sweetness.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Affogato to cart"
+                class="addBtn"
+                data-add="affogato"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso redeye"
+          data-category="popular hot"
+          data-product-id="red-eye"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Red Eye to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="red-eye"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Red Eye</div>
+          <div class="content">
+            <h2 class="tagline">Red Eye</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Red Eye"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Hotredeyecoffeei.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$6.00</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Brewed coffee with a shot of espresso for extra caffeine.
+                <strong class="detail-label">Tasting notes:</strong> bold roast
+                and cocoa.
+                <strong class="detail-label">Recommended brewing:</strong> drip
+                or pour-over.
+              </div>
+
+              <button
+                aria-label="Add Red Eye to cart"
+                class="addBtn"
+                data-add="red-eye"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso blackcoffee"
+          data-category="cold popular bestseller"
+          data-product-id="black-coffee"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Black Coffee to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="black-coffee"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Black Coffee</div>
+          <div class="content">
+            <h2 class="tagline1">Black Coffee</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Black Coffee"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Coldblackcoffeewi.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$4.25</div>
+            <div class="sty">
+              <div class="Cold">Cold Drink</div>
+              <div class="details">
+                Simple brewed coffee without milk or sugar.
+                <strong class="detail-label">Tasting notes:</strong> bold roast
+                and cocoa.
+                <strong class="detail-label">Recommended brewing:</strong> drip
+                or pour-over.
+              </div>
+
+              <button
+                aria-label="Add Black Coffee to cart"
+                class="addBtn"
+                data-add="black-coffee"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso viennacoffee"
+          data-category="popular hot"
+          data-product-id="vienna-coffee"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Vienna Coffee to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="vienna-coffee"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Vienna Coffee</div>
+          <div class="content">
+            <h2 class="tagline2">Vienna Coffee</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Vienna Coffee"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/HotViennacoffeein.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$7.00</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Coffee topped with whipped cream instead of milk.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                creamy sweetness.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Vienna Coffee to cart"
+                class="addBtn"
+                data-add="vienna-coffee"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso caf&eacute;bomb&oacute;n"
+          data-category="popular hot"
+          data-product-id="caf-bomb-n"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Caf&eacute; Bomb&oacute;n to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="caf-bomb-n"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Caf&eacute; Bomb&oacute;n</div>
+          <div class="content">
+            <h2 class="tagline2">Caf&eacute; Bomb&oacute;n</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Caf&eacute; Bomb&oacute;n"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Caf&eacute;Bomb&oacute;ninplain.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$5.50</div>
+            <div class="sty">
+              <div class="Hot">Hot Drink</div>
+              <div class="details">
+                Espresso with sweetened condensed milk, layered.
+                <strong class="detail-label">Tasting notes:</strong> cocoa and
+                creamy sweetness.
+                <strong class="detail-label">Recommended brewing:</strong>
+                espresso with milk or water to taste.
+              </div>
+
+              <button
+                aria-label="Add Caf&eacute; Bomb&oacute;n to cart"
+                class="addBtn"
+                data-add="caf-bomb-n"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso chocolatecake"
+          data-category="cake"
+          data-product-id="chocolate-cake"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Chocolate Cake to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="chocolate-cake"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Chocolate Cake</div>
+          <div class="content">
+            <h2 class="tagline2">Chocolate Cake</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Chocolate Cake"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/ChocolateCakepiece.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$3.50</div>
+            <div class="sty">
+              <div class="Hot">Cake</div>
+              <div class="details">
+                Rich with chocolate flavor, sweet and satisfying to eat.
+              </div>
+
+              <button
+                aria-label="Add Chocolate Cake to cart"
+                class="addBtn"
+                data-add="chocolate-cake"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso redvelvetcake"
+          data-category="cake"
+          data-product-id="red-velvet-cake"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Red Velvet Cake to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="red-velvet-cake"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Red Velvet Cake</div>
+          <div class="content">
+            <h2 class="tagline2">Red Velvet Cake</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Red Velvet Cake"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/RedVelvetCakepiec.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$4.00</div>
+            <div class="sty">
+              <div class="Hot">Cake</div>
+              <div class="details">
+                Beautifully red, paired with cream cheese frosting, perfect for
+                celebrations.
+              </div>
+
+              <button
+                aria-label="Add Red Velvet Cake to cart"
+                class="addBtn"
+                data-add="red-velvet-cake"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso carrotcake"
+          data-category="cake"
+          data-product-id="carrot-cake"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Carrot Cake to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="carrot-cake"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Carrot Cake</div>
+          <div class="content">
+            <h2 class="tagline1">Carrot Cake</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Carrot Cake"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/CarrotCakepiece.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$3.50</div>
+            <div class="sty">
+              <div class="Hot">Cake</div>
+              <div class="details">
+                Made with carrots, walnuts, and spices, offering a nutritious
+                and flavorful bite
+              </div>
+
+              <button
+                aria-label="Add Carrot Cake to cart"
+                class="addBtn"
+                data-add="carrot-cake"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso cheesecake"
+          data-category="cake"
+          data-product-id="cheesecake"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Cheesecake to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="cheesecake"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Cheesecake</div>
+          <div class="content">
+            <h2 class="tagline1">Cheesecake</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Cheesecake"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Cheesecakepiece.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$4.50</div>
+            <div class="sty">
+              <div class="Hot">Cake</div>
+              <div class="details">
+                Cream cheese&ndash;based, with a sweet and tangy taste, best
+                enjoyed chilled.
+              </div>
+
+              <button
+                aria-label="Add Cheesecake to cart"
+                class="addBtn"
+                data-add="cheesecake"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso blackforestcake"
+          data-category="cake"
+          data-product-id="black-forest-cake"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Black Forest Cake to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="black-forest-cake"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Black Forest Cake</div>
+          <div class="content">
+            <h2 class="tagline2">Black Forest Cake</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Black Forest Cake"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/BlackForestCakepi.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$4.00</div>
+            <div class="sty">
+              <div class="Hot">Cake</div>
+              <div class="details">
+                German classic with chocolate sponge, cream, and cherries
+                layered together.
+              </div>
+
+              <button
+                aria-label="Add Black Forest Cake to cart"
+                class="addBtn"
+                data-add="black-forest-cake"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso angelfoodcake"
+          data-category="cake"
+          data-product-id="angel-food-cake"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Angel Food Cake to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="angel-food-cake"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Angel Food Cake</div>
+          <div class="content">
+            <h2 class="tagline2">Angel Food Cake</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Angel Food Cake"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/AngelFoodCakepiec.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$3.00</div>
+            <div class="sty">
+              <div class="Hot">Cake</div>
+              <div class="details">
+                Made with egg whites, very light and airy, almost cloud-like
+              </div>
+
+              <button
+                aria-label="Add Angel Food Cake to cart"
+                class="addBtn"
+                data-add="angel-food-cake"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso tiramisu"
+          data-category="cake"
+          data-product-id="tiramisu"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Tiramisu to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="tiramisu"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Tiramisu</div>
+          <div class="content">
+            <h2 class="tagline">Tiramisu</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Tiramisu"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Tiramisupiece.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$4.50</div>
+            <div class="sty">
+              <div class="Hot">Cake</div>
+              <div class="details">
+                Coffee-soaked sponge layered with mascarpone cream and dusted
+                with cocoa. A creamy dessert with a gentle coffee finish.
+              </div>
+
+              <button
+                aria-label="Add Tiramisu to cart"
+                class="addBtn"
+                data-add="tiramisu"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso fruitcake"
+          data-category="cake"
+          data-product-id="fruit-cake"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Fruit Cake to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="fruit-cake"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Fruit Cake</div>
+          <div class="content">
+            <h2 class="tagline">Fruit Cake</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Fruit Cake"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Fruitcakepiece.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$3.50</div>
+            <div class="sty">
+              <div class="Hot">Cake</div>
+              <div class="details">
+                Packed with dried fruits and nuts, often enjoyed during festive
+                occasions.
+              </div>
+
+              <button
+                aria-label="Add Fruit Cake to cart"
+                class="addBtn"
+                data-add="fruit-cake"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso coffeecake"
+          data-category="cake"
+          data-product-id="coffee-cake"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Coffee Cake to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="coffee-cake"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Coffee Cake n</div>
+          <div class="content">
+            <h2 class="tagline">Coffee Cake</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Coffee Cake"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/CoffeeCakepiece.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$3.00</div>
+            <div class="sty">
+              <div class="Hot">Cake</div>
+              <div class="details">
+                Coffee-flavored cake, perfect for breakfast or tea time
+              </div>
+
+              <button
+                aria-label="Add Coffee Cake to cart"
+                class="addBtn"
+                data-add="coffee-cake"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso buttercake"
+          data-category="cake"
+          data-product-id="butter-cake"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Butter Cake to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="butter-cake"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Butter Cake</div>
+          <div class="content">
+            <h2 class="tagline1">Butter Cake</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Butter Cake"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/ButterCakepiece.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$5.50</div>
+            <div class="sty">
+              <div class="Hot">Cake</div>
+              <div class="details">
+                Classic cake made mainly with butter, sugar, eggs, and milk
+              </div>
+
+              <button
+                aria-label="Add Butter Cake to cart"
+                class="addBtn"
+                data-add="butter-cake"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso brioche"
+          data-category="bread"
+          data-product-id="brioche"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Brioche to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="brioche"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Brioche</div>
+          <div class="content">
+            <h2 class="tagline">Brioche</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Brioche"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Briochebreadloaf.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$2.50</div>
+            <div class="sty">
+              <div class="Hot">Bread</div>
+              <div class="details">
+                Rich, buttery French bread, slightly sweet.
+              </div>
+
+              <button
+                aria-label="Add Brioche to cart"
+                class="addBtn"
+                data-add="brioche"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso baguette"
+          data-category="bread"
+          data-product-id="baguette"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Baguette to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="baguette"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Baguette</div>
+          <div class="content">
+            <h2 class="tagline">Baguette</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Baguette"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Baguettebreadpiece.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$2.00</div>
+            <div class="sty">
+              <div class="Hot">Bread</div>
+              <div class="details">
+                Long, thin French bread with a crispy crust.
+              </div>
+
+              <button
+                aria-label="Add Baguette to cart"
+                class="addBtn"
+                data-add="baguette"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso whitebread"
+          data-category="bread"
+          data-product-id="white-bread"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save White Bread to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="white-bread"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">White Bread</div>
+          <div class="content">
+            <h2 class="tagline1">White Bread</h2>
+            <div class="coffee-warp">
+              <img
+                alt="White Bread"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/WhiteBreadpiece.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$1.50</div>
+            <div class="sty">
+              <div class="Hot">Bread</div>
+              <div class="details">
+                Soft, fluffy, made from refined wheat flour
+              </div>
+
+              <button
+                aria-label="Add White Bread to cart"
+                class="addBtn"
+                data-add="white-bread"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso sourdough"
+          data-category="bread"
+          data-product-id="sourdough"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Sourdough to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="sourdough"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Sourdough</div>
+          <div class="content">
+            <h2 class="tagline">Sourdough</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Sourdough"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Sourdoughbreadpiec.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$2.50</div>
+            <div class="sty">
+              <div class="Hot">Bread</div>
+              <div class="details">
+                Fermented naturally with wild yeast, tangy flavor
+              </div>
+
+              <button
+                aria-label="Add Sourdough to cart"
+                class="addBtn"
+                data-add="sourdough"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="card expresso ciabatta"
+          data-category="bread"
+          data-product-id="ciabatta"
+        >
+          <div class="card-harder">
+            <button
+              aria-label="Save Ciabatta to favourites"
+              aria-pressed="false"
+              class="icon favourite-btn"
+              data-favourite="ciabatta"
+              type="button"
+            >
+              <svg aria-hidden="true" viewbox="0 0 24 24">
+                <path
+                  d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="bg"></div>
+          <div class="watermark moved-style-1">Ciabatta</div>
+          <div class="content">
+            <h2 class="tagline">Ciabatta</h2>
+            <div class="coffee-warp">
+              <img
+                alt="Ciabatta"
+                class="coffee mocha"
+                decoding="async"
+                loading="lazy"
+                src="image/Ciabattabreadpiece.png"
+              />
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="old">$2.20</div>
+            <div class="sty">
+              <div class="Hot">Bread</div>
+              <div class="details">
+                Italian bread, rustic with airy texture, perfect for sandwiches.
+              </div>
+
+              <button
+                aria-label="Add Ciabatta to cart"
+                class="addBtn"
+                data-add="ciabatta"
+                type="button"
+              >
+                <span> ADD TO CART </span>
+                <span class="arrow"> &gt; </span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="no-results" hidden id="noResults">
+        No matching products. Try another name, flavour or category.
+      </p>
+    </main>
+    <footer aria-label="Luxury concierge footer" class="luxury-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Bean Boutique Concierge</h2>
+          <p>
+            For curated sourcing, private tastings, and bespoke blends, our
+            concierge team is at your service.
+          </p>
+          <div class="footer-video">
+            <h3>Coffee Moments</h3>
+            <iframe
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+              loading="lazy"
+              src="https://www.youtube.com/embed/wFut2zYOT7k?si=kW81jgtr7HmxKUh"
+              title="Coffee video supplied with the original project"
+            >
+            </iframe>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h3>Experience</h3>
+            <ul>
+              <li>
+                <a href="coffee_selection.html"> Coffee Selection </a>
+              </li>
+              <li>
+                <a href="BrewingEquipment.html"> Brewing Equipment </a>
+              </li>
+              <li>
+                <a href="event.html"> Events </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <ul>
+              <li>
+                <a data-open="contactPanel" href="#contactPanel">
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a data-open="locationPanel" href="#locationPanel">
+                  Location
+                </a>
+              </li>
+              <li>
+                <a data-open="policyPanel" href="#policyPanel"> Policy </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h3>Stay In Touch</h3>
+          <p>Prepare an email to ask about new coffees and club updates.</p>
+          <form
+            action="mailto:pyae.2255phk@gmail.com"
+            class="footer-form"
+            enctype="text/plain"
+            id="footerContactForm"
+            method="post"
+          >
+            <label class="visually-hidden" for="footerContactForm-email">
+              Email address
+            </label>
+            <input
+              autocomplete="email"
+              id="footerContactForm-email"
+              maxlength="254"
+              name="email"
+              placeholder="Email address"
+              required
+              type="email"
+            />
+            <button class="btn footer-btn" type="submit">
+              Email Concierge
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique &middot; Student website prototype</p>
+      </div>
+    </footer>
+    <div class="panel-backdrop" hidden id="panelBackdrop"></div>
+    <div
+      aria-labelledby="contactPanelTitle"
+      aria-modal="true"
+      class="slide-panel"
+      hidden
+      id="contactPanel"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="slide-panel-header">
+        <h2 class="slide-panel-title" id="contactPanelTitle">Contact Us</h2>
+        <button
+          aria-label="Close contact panel"
+          class="slide-panel-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="slide-panel-content">
+        <h3>Get in Touch</h3>
+        <p>
+          Email:
+          <a href="mailto:pyae.2255phk@gmail.com"> pyae.2255phk@gmail.com </a>
+        </p>
+        <p>Send us a question about coffee, brewing equipment or an event.</p>
+        <h3>Our selected venue</h3>
+        <p>
+          Strategy First College &ndash; Yangon Teaching Centre 1
+          <br />
+          Myaynigone, Yangon, Myanmar
+        </p>
+        <button class="btn-secondary" data-open="locationPanel" type="button">
+          View location
+        </button>
+      </div>
+    </div>
+    <div
+      aria-labelledby="locationPanelTitle"
+      aria-modal="true"
+      class="slide-panel"
+      hidden
+      id="locationPanel"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="slide-panel-header">
+        <h2 class="slide-panel-title" id="locationPanelTitle">Our Location</h2>
+        <button
+          aria-label="Close location panel"
+          class="slide-panel-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="slide-panel-content">
+        <h3>Strategy First Myaynigone</h3>
+        <p>
+          Strategy First College &ndash; Yangon Teaching Centre 1
+          <br />
+          Myaynigone, Yangon, Myanmar
+        </p>
+        <p>
+          The venue selected for this student prototype. Please confirm
+          attendance and venue availability by email before travelling.
+        </p>
+        <div class="footer-locations">
+          <iframe
+            allowfullscreen
+            class="map-iframe"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5611.467732973025!2d96.13290718615393!3d16.802293475314606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb43fa921d1f%3A0xcd0eb4c146c271bd!2sStrategy%20First%20College%20-%20Yangon%20Teaching%20Centre%201!5e0!3m2!1sen!2smm!4v1789392054840!5m2!1sen!2smm"
+            title="Map of Strategy First College, Myaynigone, Yangon"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby="policyPanelTitle"
+      aria-modal="true"
+      class="slide-panel"
+      hidden
+      id="policyPanel"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="slide-panel-header">
+        <h2 class="slide-panel-title" id="policyPanelTitle">Policies</h2>
+        <button
+          aria-label="Close policy panel"
+          class="slide-panel-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="slide-panel-content">
+        <h3>Your information</h3>
+        <p>
+          Registration and concierge forms prepare an email to
+          pyae.2255phk@gmail.com. Review it and press Send in your email app. A
+          draft is not a confirmed booking.
+        </p>
+        <p>
+          Cart items, favourites and demo offer choices are saved in this
+          browser. Registration details are not saved in browser storage. Google
+          Maps and YouTube are third-party embeds and may receive connection
+          information when loaded.
+        </p>
+        <h3>Orders and subscriptions</h3>
+        <p>
+          Prices, promotions, delivery plans and event dates are illustrative.
+          Checkout is a demonstration: no payment is collected, no order is
+          placed and no subscription is started.
+        </p>
+        <h3>Discounts</h3>
+        <p>
+          The welcome offer takes up to $10 off merchandise. The member offer
+          takes 5% off merchandise. Choose one offer per cart; discounts never
+          exceed the subtotal. Eligibility is simulated on this device.
+        </p>
+      </div>
+    </div>
+    <div
+      aria-labelledby="emailTitle"
+      aria-modal="true"
+      class="modal"
+      hidden
+      id="emailModal"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <button
+          aria-label="Close email draft"
+          class="modal-close"
+          data-close-dialog
+          type="button"
+        >
+          &times;
+        </button>
+        <h2 class="modal-title" id="emailTitle">Your email draft</h2>
+        <p class="modal-subtitle">
+          To:
+          <a href="mailto:pyae.2255phk@gmail.com"> pyae.2255phk@gmail.com </a>
+        </p>
+        <p class="modal-note">
+          Open your email app, review the draft and press Send. Your request is
+          confirmed only when the organiser replies.
+        </p>
+        <label class="draft-label" for="emailDraft"> Draft message </label>
+        <textarea
+          class="email-draft"
+          id="emailDraft"
+          readonly
+          rows="9"
+        ></textarea>
+        <div class="draft-actions">
+          <a
+            class="btn-primary"
+            href="mailto:pyae.2255phk@gmail.com"
+            id="openEmail"
+          >
+            Open email app
+          </a>
+          <button class="btn-secondary" id="copyEmail" type="button">
+            Copy draft
+          </button>
+        </div>
+        <p class="status" id="emailStatus" role="status"></p>
+      </div>
+    </div>
+    <p
+      aria-atomic="true"
+      aria-live="polite"
+      class="toast"
+      id="siteStatus"
+      role="status"
+    ></p>
+    <p class="storage-notice" hidden id="storageNotice" role="status"></p>
+    <noscript>
+      <p class="noscript-note">
+        Enable JavaScript to use cart, search and registration forms. You can
+        also contact
+        <a href="mailto:pyae.2255phk@gmail.com"> pyae.2255phk@gmail.com </a>
+        .
+      </p>
+    </noscript>
+  </body>
+</html>
